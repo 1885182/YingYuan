@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PagerActivity"
+    android:orientation="vertical"
+    android:background="#fff">
+        <RadioGroup
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/radioGroup_id"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/dp_50"
+            android:layout_alignParentBottom="true">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rb1"
+                android:checked="true"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rb2"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rb3"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rb4" />
+        </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewPager_id"></android.support.v4.view.ViewPager>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="立即体验"
+        android:visibility="gone"
+        android:id="@+id/intent_activity"
+        android:layout_marginBottom="@dimen/dp_10"/>
+</RelativeLayout>
